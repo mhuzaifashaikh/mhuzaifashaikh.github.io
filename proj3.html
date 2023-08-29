@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Apple Auction Store</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="title">Mohammad Huzaifa Shaikh</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+
+				</ul>
+			</nav>
+		</header>
+		
+		<!-- Wrapper -->
+		<div id="wrapper">
+			
+			<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<!-- <p style="margin: 0;">Check the project out on my <a target=”_blank”  href="https://github.com/mhuzaifashaikh/InVehicleDatabase">GitHub</a>!</p> -->
+					<!-- <p>For understaning of context, you may have a look at this article on research conducted on In-Vehicle Information Systems <a target=”_blank” href="https://www.frontiersin.org/articles/10.3389/frsc.2020.00039/full">here.</a> </p> -->
+							
+							<h1 class="major">E-Commerce Platform for Apple Products.</h1>
+							<!-- <center>
+								<video width="565" height="500" controls>
+									<source src="images/ivisvid.mp4" type="video/mp4">
+								  Your browser does not support the video tag.
+								  </video>
+
+								  <p>A quick demonstration going over the main functionality of the website.</p>
+								  
+							</center> -->
+							
+							<!-- <p style="color:white;">I was tasked with creating a program for In-Vehicle Information Systems and this program
+								is what I came up with. My program was required to take in user entires, check if it already exists, output an error if it does
+								and ask user to enter again, add to database if it did not already exist and assign a value to each entry, allow the user to to search for an
+								entry, allow the user to delete an entry and so on... Below I go into detail on how I decided to desgin this program.</p>
+
+
+
+						 <p> <br /> </p> -->
+
+						 <p style="color: white; font-size: xx-large; margin:3px; font-weight: bold;"> Uploading today</p>
+
+						 <!-- <p style="color: white;"> In this Project, I chose to implement this algorithm primarily using hashmaps. I chose to use hashmaps as they are the most efficient and easiest way to store and deal 
+							with entries that contain unique keys for each value. Due to the primary system performance criteria being speed, I utilised hash maps for quick search of objects using a key. Hashmaps also was 
+							the best choice as speed was a criteria but the order of the key-value pairs being maintained was not important.
+							<br/>
+							In this Project I have also used an array list as a supplementary data structure that helps in storing the keys. The index at which a specific key is stored is used as the value of that key. In that way
+							no two keys will have the same value either(Since two items cannot be stored at the same index!).
+						</p>
+						
+						<p> <br /></p>
+						<p style="color: white; font-weight: bolder;"> Methods/Functions </p>
+						
+						
+						<p style="color: white; font-size: large; font-style: italic; margin: 3px; font-weight: bold;">Function 1- Insert</p>
+
+						<p style="color: white">The insert function is used to essentially add the key-value pair into the hashmap. This is done by first checking if the key already exists in the hashmap, because if it does we will 
+							have to alert the user and return from the method as each key is supposed to be unique.
+							<br/>However, if the key does not exist, we proceed to add it to the hashmap. This is done by adding the key to the supplementary array list. Once it is added to the array list, the index of the key is used as the
+							value for this key and this pair is added to the hashmap.
+							
+							</p>
+
+							<p> <br /> </p>
+							<p style="color: white; font-size: large; font-style: italic; margin: 3px; font-weight: bold;">Function 2- Delete</p>
+
+
+							<p style="color: white">The delete function is used to essentially delete the key-value pair from the hashmap. This is done by first checking if the exists in the hashmap. That is done by extracting the value of the
+								 key using a hashmap method and checking if the value is null. If it is, then the key does not exist and therefore there is nothing to delete and the user is alerted subsequently.<br/>
+								However, if the key does exist, we proceed to delete it from the hashmap. This process is a little more complicated than inserting. It would be easier to remove an element from the end of an array list rather than 
+								the middle which would need it to then rearrange all the rest of the elements so that no value in between the array list is null. And since the order of the keys is not important, what we did is swap the key to remove
+								 with the last key in the arraylist. We did this buy extracting the index of the last element of the array list (size of arraylist -1) and then checked to see if this index is also the same as the value of the key, because 
+								 if it is that would mean that this key-value pair is the only one in the arraylist(and therefore in the hashmap) and we would not need to do any swapping. However, if it is not, then we extract the current key in the last
+								position of the array list to later assign a new value to it. After we do that, we use a java utility function to swap in the array the key in the last position with the key that we have to delete. And once we do that, we 
+								remove the key that is now in the last position(this is now the key we want to delete).<br/> 
+								Finally, assign the key that was swapped the new value which was previously used byt the key we just removed.
+								</p>
+
+
+								<p> <br /></p>
+								<p style="color: white; font-size: large; font-style: italic; margin: 3px; font-weight: bold;">Function 3- Search</p>
+
+								<p style="color: white">The search function is used to essentially search a key-value pair on the hashmap. This is done by first checking if the exists in the hashmap. That is done by extracting the value of the key using
+									 a hashmap method and checking if the value is null. If it is, then the key does not exist and therefore it is not found and the user is alerted subsequently.<br/>
+									However, if the key does exist, then we print a message to the user that shows the key they searched for and the value of this key. The function then returns this value.
+									</p> -->
+						 
+						</div>
+
+					</section>
+
+			</div>
+
+		
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Mohammad Huzaifa Shaikh. All rights reserved.</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
