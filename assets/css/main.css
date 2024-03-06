@@ -218,6 +218,13 @@ input, select, textarea {
 			margin: 0 0 1.3em 0;
 			position: relative;
 			padding-bottom: 0.35em;
+			background: linear-gradient(90deg, purple, pink, orange, white);
+			background-size: 400% 400%;
+			color: transparent;
+			-webkit-background-clip: text;
+			background-clip: text;
+			animation: gradientAnimation 5s infinite;
+			
 		}
 
 			h1.major:after {
