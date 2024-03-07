@@ -3279,7 +3279,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background: rgb(0,0,4);
+			background: linear-gradient(29deg, rgba(0,0,4,1) 31%, rgba(97,7,177,1) 94%);
 		}
 
 		.wrapper.style2-alt {
@@ -3287,7 +3288,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #622568;
+			background: rgb(4,0,4);
+background: linear-gradient(29deg, rgba(4,0,4,1) 25%, rgba(177,7,137,1) 85%);
 		}
 
 		.wrapper.style3-alt {
