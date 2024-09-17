@@ -7,6 +7,17 @@
 */
 
 
+.projectSubHeader{
+	color: transparent; 
+	font-size: xx-large; 
+	margin:3px; 
+	font-weight: bold;
+	background: linear-gradient(to right, #ff0000, #ffff00); /* gradient from red to yellow */
+	-webkit-background-clip: text;
+	background-clip: text;
+	display: inline-block;
+}
+
 
   @keyframes gradientAnimation {
     0% { background-position: 0% 50%; }
@@ -121,7 +132,8 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		background: rgb(100,43,117);
+background: linear-gradient(264deg, rgba(100,43,117,1) 44%, rgba(0,0,0,1) 97%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3403,7 +3415,10 @@ background: linear-gradient(29deg, rgba(4,0,4,1) 25%, rgba(177,7,137,1) 85%);
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #5e42a6;
+		/* background: rgb(0,0,0);
+background: linear-gradient(54deg, rgba(0,0,0,1) 11%, rgba(253,29,29,1) 56%, rgba(252,176,69,1) 100%); */
+background: rgb(0,0,0);
+background: linear-gradient(69deg, rgba(0,0,0,1) 11%, rgba(163,22,22,1) 64%, rgba(252,176,69,1) 100%);
 		cursor: default;
 		padding: 1.75em 2em;
 	}
@@ -3936,7 +3951,7 @@ background: linear-gradient(29deg, rgba(4,0,4,1) 25%, rgba(177,7,137,1) 85%);
 		@media screen and (max-width: 1280px) {
 
 			#intro {
-				background-attachment: scroll;
+				background-attachment: fixed;
 			}
 
 		}

@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Full Stack Serverless AWS App</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Mohammad Huzaifa Shaikh</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<p style="margin: 0;">Check the project out on my <b><a target=”_blank”  href="https://github.com/mhuzaifashaikh/awsclientapp">GitHub</a></b>!</p>
+                            <p>Try it out for yourself, <b><a target=”_blank”  href="https://main.d3m6cl65omgl3g.amplifyapp.com/">here</a></b></p>
+							
+							
+							<h1 class="major">Full Stack Serverless AWS App</h1>
+							<center>
+								<!-- <video width="750" height="450" controls>
+									<source src="images/rrvid.mp4" type="video/mp4">
+								  Your browser does not support the video tag.
+								  </video> -->
+                                  <img width="55%" height="55%" src="images/HomePageXev.png"/>
+
+								  <p>A screenshot of the web applications homepage</p>
+								  
+							</center>
+							
+							<p style="color:white;">This is a comprehensive full-stack AWS application, designed to provide a seamless user experience. Upon signing in or 
+                                registering, users are welcomed by a beautiful homepage, offering easy access to their client portfolio. For new client additions, a sleek and efficiently
+                                 designed form enables rapid data entry, directly updating a cloud-based database. Following submission, users are redirected to a dedicated client management page, 
+                                 showcasing a comprehensive list of all clients, including the newly added entry.</p>
+
+						 
+
+
+						 <p> <br /> </p>
+
+						 <p class="projectSubHeader"> Technologies I utilized, and how they work...</p>
+
+				
+					
+						<p style="color: white; font-size: x-large; font-style: italic; font-weight: bold; margin: 3px;">Frontend</p>
+
+						    <ul>
+                            <li><b>React:</b> User interface and client-side logic</li>
+                            </ul>
+                            
+
+					
+							<p style="color: white; font-size: x-large; font-style: italic; font-weight: bold; margin: 3px;">Backend</p>
+
+
+                            <ul>
+                                <li><b>AWS CLI:</b> Command-line tool for interacting with AWS services</li>
+                                <li><b>AWS Amplify:</b> Development platform for building scalable mobile and web applications</li>
+                                <li><b>AWS API Gateway:</b> RESTful API for handling client requests</li>
+                                <li><b>AWS Lambda:</b> Serverless compute service for executing business logic</li>
+                                </ul>
+                                
+                            <p style="color: white; font-size: x-large; font-style: italic; font-weight: bold; margin: 3px;">Database</p>
+
+                                <ul>
+                                <li><b>Amazon DynamoDB:</b> NoSQL database for storing client data
+                                </li>
+                                </ul>
+
+                            <p style="color: white; font-size: x-large; font-style: italic; font-weight: bold; margin: 3px;">Authentication</p>
+
+                                <ul>
+                                <li><b>AWS Amplify Auth:</b> Authentication library for managing user sessions</li>
+                                <li><b>AWS Cognito:</b> User identity and access management service</li>
+                                </ul>
+						 
+                            <p style="color: white; font-size: x-large; font-style: italic; font-weight: bold; margin: 3px;">Other</p>
+
+                            <ul>
+                            <li><b>AWS Amplify CLI:</b>  For local development, testing, and deployment of the application</li>
+                            </ul>
+
+                            <p class="projectSubHeader"> How it all works...</p>
+                            <p style="color: white; font-size: x-large; font-style: italic; font-weight: bold; margin: 3px;">User Authentication</p>
+                            <ul>
+                                <li>Users sign in or sign up using AWS Amplify Auth, which utilizes AWS Cognito for secure user identity and access management.</li>
+                            </ul>
+                            
+
+                            <p style="color: white; font-size: x-large; font-style: italic; font-weight: bold; margin: 3px;">Client Form Submission</p>
+                            <ul>
+                                <li>When a user submits a client form, the application uses AWS API Gateway to send a PUT request to a Lambda function.
+                                </li>
+                            </ul>
+
+                            <p style="color: white; font-size: x-large; font-style: italic; font-weight: bold; margin: 3px;">Lambda Function</p>
+                            <ul>
+                            <li>The Lambda function interacts with Amazon DynamoDB, adding the new client data to the database.</li>
+                            </ul>
+                            <p style="color: white; font-size: x-large; font-style: italic; font-weight: bold; margin: 3px;">Client Page</p>
+                            <ul>
+                            <li>When a user navigates to the client page, API Gateway automatically triggers the Lambda function's GET method.</li>
+                            <li>The Lambda function queries DynamoDB, retrieving all records associated with the logged-in user.</li>
+                            <li>The application displays the retrieved data on the client page, providing a personalized view of the user's clients.</li>
+                            </ul>
+
+
+						</div>
+
+
+
+                        
+
+					</section>
+
+			</div>
+
+		
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Mohammad Huzaifa Shaikh. All rights reserved.</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
