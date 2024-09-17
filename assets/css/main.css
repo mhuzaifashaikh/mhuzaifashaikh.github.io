@@ -3283,11 +3283,12 @@ background: linear-gradient(264deg, rgba(100,43,117,1) 44%, rgba(0,0,0,1) 97%);
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background: rgb(0,0,0);
+background: linear-gradient(193deg, rgba(0,0,0,1) 18%, rgba(163,22,22,1) 59%, rgba(165,69,252,1) 100%);
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #1b1330;
 		}
 
 		.wrapper.style2 {
