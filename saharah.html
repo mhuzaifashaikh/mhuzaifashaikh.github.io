@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Saharah</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title"> Huzaifa Shaikh</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<!-- <p style="margin: 0;">Check the project out on my <b><a target=”_blank”  href="https://github.com/mhuzaifashaikh/awsclientapp">GitHub</a></b>!</p> -->
+                            <p>Go shop! (I get a commission for my work👀), <b><a target=”_blank”  href="https://saharah.ca">here</a></b></p>
+							
+							
+							<h1 class="major">'Saharah' - A Freelance, Full-Stack, Production-Grade, E-Commerce Project</h1>
+							<center>
+								<!-- <video width="750" height="450" controls>
+									<source src="images/rrvid.mp4" type="video/mp4">
+								  Your browser does not support the video tag.
+								  </video> -->
+								  <img width="55%" height="55%" src="images/saharah_test_checkout.png"/>
+								  <p>A screenshot of a customers cart with a test product in it.</p>
+
+
+                                  <img width="55%" height="55%" src="https://saharahimagesf4578-dev.s3.us-east-1.amazonaws.com/+saharah_aws_architecture.png"/>
+
+
+								  
+
+								  <p>Architectural Diagram of Saharah</p>
+								  
+							</center>
+							
+							<p style="color:white;"> <b>A free-lance project for an e-commerce client who sells traditional South Asian clothing for Women.</b>
+
+								I developed Saharah as a full-stack e-commerce application that showcases a modern, serverless architecture on AWS. I built the front end with React and bundled/deployed it via AWS Amplify, 
+								leveraging a continuous integration/continuous delivery (CI/CD) pipeline connected to my GitHub repository. I manage the app’s domain with Amazon Route 53, ensuring a custom URL and DNS configuration.</p>
+
+						 
+
+
+						 <p> <br /> </p>
+
+						 <p class="projectSubHeader"> Technologies I utilized, and how they work...</p>
+
+				
+					
+						<p style="color: white; font-size: x-large; font-style: italic; font-weight: bold; margin: 3px;">Frontend</p>
+
+						    <ul>
+                            <li><b>React/NodeJS:</b> User interface and client-side logic</li>
+                            </ul>
+                            
+
+					
+							<p style="color: white; font-size: x-large; font-style: italic; font-weight: bold; margin: 3px;">Backend</p>
+
+
+                            <ul>
+                                <li><b>Amplify GraphQL:</b> Provides schemas and mutations for real-time data operations
+								</li>
+                                <li><b>AWS Amplify:</b> Used for hosting the React front end and managing a CI/CD pipeline with GitHub
+								</li>
+                                <li><b>Amazon SES:</b> Delivers automated email invoices and notifications
+								</li>
+                                <li><b>AWS Lambda:</b> Executes cart session management, inventory updates, and payment workflows with Stripe
+								</li>
+                                </ul>
+                                
+                            <p style="color: white; font-size: x-large; font-style: italic; font-weight: bold; margin: 3px;">Database</p>
+
+                                <ul>
+                                <li><b>Amazon DynamoDB:</b> Stores product details, orders, and inventory information
+
+                                </li>
+								<li><b>Amazon S3:</b> Hosts product images and other static assets
+
+
+                                </li>
+                                </ul>
+
+                            <!-- <p style="color: white; font-size: x-large; font-style: italic; font-weight: bold; margin: 3px;">Authentication</p>
+
+                                <ul>
+                                <li><b>AWS Amplify Auth:</b> Authentication library for managing user sessions</li>
+                                <li><b>AWS Cognito:</b> User identity and access management service</li>
+                                </ul> -->
+						 
+                            <p style="color: white; font-size: x-large; font-style: italic; font-weight: bold; margin: 3px;">Other</p>
+
+                            <ul>
+                            <li><b>AWS Amplify CLI:</b>  For local development, testing, and deployment of the application</li>
+							<li><b>Amazon Route53:</b>Handles domain registration and DNS configuration for a custom URL
+							</li>
+
+                            </ul>
+
+                            <p class="projectSubHeader"> How it all works...</p>
+                            <p style="color: white; font-size: x-large; font-style: italic; font-weight: bold; margin: 3px;">User Experience & Cart Sessions</p>
+                            <ul>
+                                <li>Visitors are greeted by a beautiful UI I designed. They can freely browse products and add items to their cart. AWS Lambda functions track cart sessions and update DynamoDB for accurate stock levels.
+
+								</li>
+                            </ul>
+                            
+
+                            <p style="color: white; font-size: x-large; font-style: italic; font-weight: bold; margin: 3px;">Payment Processing</p>
+                            <ul>
+                                <li>At checkout, the app invokes a Lambda function to process the payment through Stripe. Upon receiving a webhook event from Stripe, another Lambda function confirms the transaction and updates order records.
+                                </li>
+                            </ul>
+
+                            <p style="color: white; font-size: x-large; font-style: italic; font-weight: bold; margin: 3px;">Failed/Abandoned Payments</p>
+                            <ul>
+                            <li>If Stripe indicates a failed payment or the user abandons the checkout, the Lambda function holds stock for 30 minutes, then automatically restocks DynamoDB to maintain accurate inventory.</li>
+                            </ul>
+
+                            <p style="color: white; font-size: x-large; font-style: italic; font-weight: bold; margin: 3px;">Invoice Generation & Notifications</p>
+                            <ul>
+                            <li>After successful payment, the final Lambda function calls Amazon SES to send an email invoice to the buyer. Product images are served from S3, and all order details remain accessible in DynamoDB.</li>
+                            </ul>
+
+
+						</div>
+
+
+
+                        
+
+					</section>
+
+			</div>
+
+		
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy;  Huzaifa Shaikh. All rights reserved.</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
